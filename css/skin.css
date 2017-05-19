@@ -1,0 +1,48 @@
+body {
+    font-family: 'Biryani', sans-serif;
+    
+}
+
+h3 {
+    font-family: 'Biryani', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+/* --------------------------
+  Triangle Graident
+--------------------------- */
+  .triangle {
+  /*width: 0;
+height: 0;
+border-style: solid;
+border-width: 600px 800px 0 0;
+border-color:  #A8EDEA transparent transparent transparent;
+    border-image:
+      linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
+position: absolute;
+top: 0;
+left: 0;
+z-index: -1; */
+ width: 800px;
+  height: 160px;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: rotate(-90deg);
+  border-radius: 2px;
+}
+
+.triangle::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(10%, #A8EDEA), color-stop(100%, #FBD7E3));
+  transform: rotate(-45deg);
+}
+
+  }
